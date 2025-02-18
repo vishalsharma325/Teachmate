@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teachmate</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="dark">
+  <div class="app">
+    <header>
+      <h1>Teachmate</h1>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <i data-lucide="sun"></i>
+      </button>
+    </header>
+
+    <main id="chat-container"></main>
+
+    <form id="message-form">
+      <label for="file-input" class="file-button">
+        <i data-lucide="plus"></i>
+      </label>
+      <input type="file" id="file-input" hidden>
+
+      <input 
+        type="text" 
+        id="message-input" 
+        placeholder="Type your message..." 
+        autocomplete="off"
+      >
+      <button type="submit" id="send-button" aria-label="Send message">
+        <i data-lucide="send"></i>
+      </button>
+    </form>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
