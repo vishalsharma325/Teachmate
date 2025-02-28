@@ -10,7 +10,7 @@ genai.configure(api_key="AIzaSyCXT7jyMPHY32Y7JfB5JPMLNJGIA2iivHk")
 # Serve index.html
 @app.route('/')
 def home():
-    return render_template("index.html")  # Flask will  inside "templates/"
+    return render_template("index.html")  # Flask will  inside the "templates/"
 
 # Handle chatbot requests
 @app.route('/ask', methods=['POST'])
