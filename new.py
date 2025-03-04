@@ -19,7 +19,7 @@ def ask_gemini():
     prompt = data.get("prompt", "")
 
     if not prompt:
-        return jsonify({"error": "No prompt provided"}), 400
+        return jsonify({"error": "No prompt was provided"}), 400
 
     try:
         model = genai.GenerativeModel("gemini-pro")
