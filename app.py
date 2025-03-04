@@ -52,7 +52,7 @@ def upload_file():
         return jsonify({"response": response.text})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
+# function to extract the text from the pdf
 def extract_text_from_pdf(pdf_path):
     doc = fitz.open(pdf_path)
     text = ""
