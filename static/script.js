@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       lucide.createIcons();
   });
 
-  // Send Message
+  // Send Messages
   messageForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const message = messageInput.value.trim();
