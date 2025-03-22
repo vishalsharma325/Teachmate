@@ -24,7 +24,7 @@
     --border: #374151;
     --bot-message-bg: #1f2937;
   }
-  
+  // body tag
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: var(--bg-primary);
